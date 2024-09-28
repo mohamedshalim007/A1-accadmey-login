@@ -25,7 +25,7 @@
             align-items: center;
             width: 100%;
             max-width: 900px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: red;  /*    background-color: rgba(255, 255, 255, 0.8);*/
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -181,7 +181,7 @@
             var aadhaar = document.getElementById("aadhaar").value;
             var errors = document.getElementById("errors");
 
-            if (name === "shalim" || phone === "7373318217" || aadhaar === "916599604422") {
+            if (name === "shalim" && phone === "7373318217" && aadhaar === "91723") {
                 generatedOtp = Math.floor(1000 + Math.random() * 9000); // Generate a 4-digit OTP
                 alert("Your OTP is: " + generatedOtp);
                 document.getElementById("otp").value = generatedOtp;
